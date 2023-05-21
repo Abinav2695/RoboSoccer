@@ -1,0 +1,13 @@
+<launch>
+
+  <arg name="bot_id"          default="$(optenv BOT_ID 0)" />
+  <arg name="team"          default="$(optenv TEAM yellow)" />
+  <arg name="role"          default="$(optenv ROLE attacker)" />
+
+  <group ns="$(arg team)">
+
+    <node pkg="soccer_mvp" type="f_roles.py" name="$(arg role)" args="--bot_id=$(arg bot_id) --team=$(arg team) --role=$(arg role)" output="screen" />
+
+  </group>
+
+</launch>

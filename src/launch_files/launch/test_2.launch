@@ -1,0 +1,6 @@
+<launch>
+    <machine name="hellboy-MS-7A15" address="192.168.0.115" user="hellboy" password="zeus1234" env-loader="/opt/ros/kinetic/env2.sh"/>
+    <!--include file="/home/rulshid/personal_bitbucket_robosoccer/robosoccer_ros/src/launch_files/launch/bot_comm.launch" machine="192.168.0.115"/-->
+    <include file="$(find rosserial_server)/launch/socket.launch" />
+    <node machine="hellboy-MS-7A15" name="bot_comm_wifi" pkg="$(find bot_comm)" type="bot_comm_blue.py" output="screen"/>
+</launch>

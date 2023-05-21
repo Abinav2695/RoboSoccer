@@ -1,0 +1,8 @@
+<launch>
+    
+    <node name= "belief_state_blue" pkg = "game_controller" type = "belief_state.py" args='0' />
+    <node name= "belief_state_yellow" pkg = "game_controller" type = "belief_state.py" args='1' />
+    <node name= "referee_node" pkg = "game_controller" type = "referee_script.py"  output="screen"/>
+    <node name= "socket_node" pkg = "game_controller" type = "serial_socket_client.py"  />
+
+</launch>

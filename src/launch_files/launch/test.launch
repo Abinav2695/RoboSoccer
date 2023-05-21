@@ -1,0 +1,13 @@
+<launch>
+    <machine name="other-pc" address="192.168.0.104" env-loader="/home/rulshid/personal_bitbucket_robosoccer/robosoccer_ros/devel/env.sh"/>
+    <!--include file="/home/rulshid/personal_bitbucket_robosoccer/robosoccer_ros/src/launch_files/launch/bot_comm.launch" machine="other-pc"/-->
+    <include file="$(find rosserial_server)/launch/socket.launch" />
+    <node name="rulshid_JS_test" pkg="bot_comm" type="rul_bot_comm_Js_test.py" output="screen"/>
+    <node name="game_controller_node" pkg="game_controller" type="game_JS.py" output="screen"/>
+    <node respawn="true" pkg="joy"
+    type="joy_node" name="turtle_joy" >
+ <param name="dev" type="string" value="/dev/input/js0" />
+ <param name="deadzone" value="0" />
+ </node>
+ <node name="rulsh" pkg="bot_comm" type="bot_comm.py" output="screen"/>
+  </launch>

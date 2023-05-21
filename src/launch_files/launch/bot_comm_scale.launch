@@ -1,0 +1,19 @@
+<launch>
+
+  <arg name="yellow_comm"          default="$(optenv YELLOW_COMM yellow)" />
+  <arg name="blue_comm"          default="$(optenv BLUE_COMM blue)" />
+  <arg name="role"          default="$(optenv ROLE role)" />
+
+  <group ns="$(arg yellow_comm)">
+
+    <node pkg="bot_comm" type="bot_comm_yellow.py" ns="$(arg role)" name="bot_comm" output="screen" />
+
+  </group>
+
+  <group ns="$(arg blue_comm)">
+
+    <node pkg="bot_comm" type="bot_comm_blue.py" ns="$(arg role)" name="bot_comm" output="screen" />
+
+  </group>
+
+</launch>

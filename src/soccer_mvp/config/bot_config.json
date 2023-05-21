@@ -1,0 +1,24 @@
+{
+    "team_yellow" : {
+        "bot_1":{
+            "id": "something",
+            "operation_region": {"length": "","width": ""}
+        },
+        "goal_post":{
+            "center": {"x":"2000", "y":"0"},
+            "left": {"x":"2000", "y":"0"},
+            "right": {"x":"2000", "y":"0"}
+        }
+    },
+    "team_blue" : {
+        "bot_1":{
+            "id": "something",
+            "operation_region": {"length": "","width": ""}
+        },
+        "goal_post":{
+            "center": {"x":"-2000", "y":"0"},
+            "left": {"x":"-2000", "y":"0"},
+            "right": {"x":"-2000", "y":"0"}
+        }
+    }
+}

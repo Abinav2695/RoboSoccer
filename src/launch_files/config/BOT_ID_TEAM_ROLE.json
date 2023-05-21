@@ -1,0 +1,26 @@
+{
+    "yellow" : {
+        "0" : {"bot_id" : "0",
+        "role" : "attacker"},
+        "1" : {"bot_id" : "1",
+        "role" : "defender"},
+        "2" : {"bot_id" : "2",
+        "role" : "goalie"},
+        "goal" : {
+            "x" : "-1600",
+            "y" : "0"
+        }
+    },
+    "blue" : {
+        "0" : {"bot_id" : "0",
+        "role" : "attacker"},
+        "1" : {"bot_id" : "1",
+        "role" : "defender"},
+        "2" : {"bot_id" : "2",
+        "role" : "goalie"},
+        "goal" : {
+            "x" : "1600",
+            "y" : "0"
+        }
+    }
+}

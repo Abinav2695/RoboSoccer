@@ -1,0 +1,3 @@
+<launch>
+  <param name="launch_files"  value="$(find launch_files)" />
+</launch>

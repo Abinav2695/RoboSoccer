@@ -1,0 +1,31 @@
+{
+   "name":"Ran from Admin Custom Command",
+   "task_id":"",
+   "task_type":"STANDALONE",
+   "device_id":"85ec15c2-74f6-11eb-a296-08f1ea94b84e",
+   "event":"command",
+   "event_data":{
+      "command":"start"
+   },
+   "timestamp":1614851836,
+   "next":{
+      
+   },
+   "callback":{
+      
+   },
+   "wait_for_complete":false
+}
+
+
+{
+   
+   "device_id":"85ec15c2-74f6-11eb-a296-08f1ea94b84e",
+   "event":"score",
+   "goal":[0,0] //B/Y
+}
+
+
+{
+   
+}
